@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#6C6A6A</color>
+    // Design system sesuai UI / UX
+
+    // Background setiap halaman
+    <color name="BackgroundHalaman">#FFF6F6F6</color>
+
+    // Brand
+    <color name="PrimaryBrand">#FFBF2A63</color>
+    <color name="SecondaryBrand">#FF99224F</color>
+    <color name="NeutralBrand">#FFECBFD0</color>
+
+    // Text
+    <color name="PrimaryText">#FF303344</color>
+    <color name="SecondaryText">#FF8388B2</color>
+    <color name="NeutralText">#FFFFFFFF</color>
+    <color name="SemanticText">#FFC5C5C5</color>
+    <color name="BrandDark">#99224F</color>
+
+    // Status
+    <color name="PrimaryStatus">#FF438F02</color>
+    <color name="SecondaryStatus">#FF018499</color>
+    <color name="NeutralStatus">#FFF2BA04</color>
+    <color name="SemanticStatus">#FFCE2166</color>
+
+    // Slider
+    //indicatior slider
+    <color name="PrimarySlider">#ECBFD0</color>
+    <color name="SecondarySlider">#99224F</color>
+
+    //Navbar
+    //text and icon
+    <color name="SecondaryIcntxt">#8388B2</color>
+
+    //topBackground Color
+    <color name="BrandPrimay">#BF2A63</color>
+
+
+    //background
+    <color name="backgourndPage">#F6F6F6</color>
+
+
+
+</resources>

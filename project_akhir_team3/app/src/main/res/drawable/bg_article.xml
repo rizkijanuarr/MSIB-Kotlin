@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bentuk dasar dengan sudut bulat -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#F6F6F6F6" />
+        </shape>
+    </item>
+
+    <!-- Ikon di tengah -->
+    <item android:gravity="center">
+        <bitmap
+            android:src="@drawable/ic_logo_loading"
+            android:gravity="center"
+            />
+    </item>
+
+</layer-list>

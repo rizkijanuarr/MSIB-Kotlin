@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.article.ArticleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+                <!--WARN -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/top_background"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="181dp"
+                            android:layout_height="198.74dp"
+                            android:layout_marginTop="20dp"
+                            android:paddingLeft="60dp"
+                            android:src="@drawable/gradient"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/gl_Guideline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.90"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ivBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_back"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvArtikel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Artikel"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/plusjakartasans_bold_700"
+                            android:textColor="@color/white"
+                            app:layout_constraintStart_toEndOf="@+id/ivBack"
+                            app:layout_constraintTop_toTopOf="@+id/ivBack"
+                            app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+                            app:layout_constraintEnd_toStartOf="@+id/gl_Guideline"
+                            />
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilCariArtikel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            app:hintEnabled="false"
+                            app:layout_constraintStart_toEndOf="@+id/ivBack"
+                            app:layout_constraintTop_toTopOf="@+id/ivBack"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            >
+
+                            <EditText
+                                android:id="@+id/etCariArtikel"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:hint="Cari artikel"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/plusjakartasans_reguler_400"
+                                android:textColor="@color/SecondaryText"
+                                android:background="@drawable/custominputregistlogin"
+                                android:paddingLeft="12dp"
+                                android:drawableStart="@drawable/ic_search"
+                                android:drawablePadding="8dp"
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_tabArticle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/tvRekomendasiUntukKamu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rekomendasi untuk kamu"
+                android:textSize="16sp"
+                android:textColor="@color/PrimaryText"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/plusjakartasans_semibold_600"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/rv_tabArticle"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBarArtikel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="50dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"></ProgressBar>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cardArticle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

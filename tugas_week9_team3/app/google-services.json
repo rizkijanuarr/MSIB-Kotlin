@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "404001316039",
+    "project_id": "msib-thepresident",
+    "storage_bucket": "msib-thepresident.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404001316039:android:02719221d3b70be7c272e2",
+        "android_client_info": {
+          "package_name": "com.example.tugasweek9"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4EGbGY4YuU1Hjw5Sr4QrUkS5MteF4lpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

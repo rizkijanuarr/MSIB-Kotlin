@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/relativeItem">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:id="@+id/imgUpcoming"/>
+        
+        <TextView
+
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitleMovie"
+            android:layout_toRightOf="@id/imgUpcoming"
+            android:text="Title Poster"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_star_24"
+            android:id="@+id/imgStar"
+            android:layout_below="@id/txtTitleMovie"
+            android:layout_toRightOf="@id/imgUpcoming"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txtRating"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgStar"
+            android:layout_below="@id/txtTitleMovie"
+            android:layout_marginTop="4dp"
+            android:text="Overview"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relase Date :"
+            android:id="@+id/txtReleaseDate"
+            android:layout_below="@+id/txtRating"
+            android:layout_toRightOf="@id/imgUpcoming"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDate"
+            android:layout_toRightOf="@id/txtReleaseDate"
+            android:text="2023-07-26"
+            android:layout_below="@id/txtRating"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="4dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgViewDetails"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="44dp"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewDetails"
+            android:text="View Details"
+            android:layout_below="@+id/imgViewDetails"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language :"
+            android:id="@+id/txtOriginalLanguage"
+            android:layout_below="@+id/txtReleaseDate"
+            android:layout_toRightOf="@id/imgUpcoming"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLanguage"
+            android:text=" en"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/txtDate"
+            android:layout_toRightOf="@id/txtOriginalLanguage"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

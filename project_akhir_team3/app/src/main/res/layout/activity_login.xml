@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/BackgroundHalaman"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity"
+    android:padding="10dp">
+
+    <!-- ILUSTRASI 1 -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/logonew"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.02"
+        />
+
+    <!-- ILUSTRASI 2 -->
+    <ImageView
+        android:id="@+id/ivLogo2"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_petani_login"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        app:layout_constraintBottom_toTopOf="@+id/tvWelcome"
+        />
+
+    <!-- TEXT SELAMAT DATANG KEMBALI -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang Kembali👋"
+        android:textSize="18sp"
+        android:fontFamily="@font/plusjakartasans_bold_700"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo2"
+        app:layout_constraintBottom_toTopOf="@+id/tvDescription"
+        android:layout_marginTop="10dp"
+        />
+
+    <!-- TEXT MARI MASUK DAN LANJUTKAN PEMBELAJARAN -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mari masuk dan lanjutkan pembelajaran!"
+        android:textSize="14sp"
+        android:fontFamily="@font/plusjakartasans_reguler_400"
+        android:textColor="@color/SecondaryText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome"
+        app:layout_constraintBottom_toTopOf="@+id/llWadahEmail"
+        android:layout_marginTop="8dp"
+        />
+
+    <!-- LABEL EMAIL -->
+    <LinearLayout
+        android:id="@+id/llWadahEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        app:layout_constraintBottom_toTopOf="@+id/emailLoginContainer"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvLabelEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:fontFamily="@font/plusjakartasans_medium_500"
+            android:textColor="@color/PrimaryText"
+            android:layout_marginRight="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/SemanticStatus"
+            />
+    </LinearLayout>
+
+    <!-- TEXT INPUT EMAIL -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLoginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:hintEnabled="false"
+        android:layout_marginTop="8dp"
+        app:helperText="Wajib diisi"
+        app:helperTextTextColor="@color/SemanticStatus"
+        app:layout_constraintTop_toBottomOf="@+id/llWadahEmail"
+        app:layout_constraintBottom_toTopOf="@+id/llPassword"
+        >
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Masukan email anda"
+            android:textSize="14sp"
+            android:fontFamily="@font/plusjakartasans_reguler_400"
+            android:textColor="@color/PrimaryText"
+            android:background="@drawable/custominputregistlogin"
+            android:paddingLeft="12dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- LABEL Password -->
+    <LinearLayout
+        android:id="@+id/llPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/emailLoginContainer"
+        app:layout_constraintBottom_toTopOf="@+id/passwordLoginContainer"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tvLabelPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="16sp"
+            android:fontFamily="@font/plusjakartasans_medium_500"
+            android:textColor="@color/PrimaryText"
+            android:layout_marginRight="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/SemanticStatus"
+            />
+    </LinearLayout>
+
+    <!-- Text Input Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLoginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llPassword"
+        app:layout_constraintBottom_toTopOf="@+id/tvLupaPassword"
+        app:hintEnabled="false"
+        app:helperText="wajib diisi"
+        app:helperTextTextColor="@color/SemanticStatus"
+        android:layout_marginTop="8dp"
+        >
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:hint="Masukan password anda"
+            android:textSize="14sp"
+            android:fontFamily="@font/plusjakartasans_reguler_400"
+            android:textColor="@color/PrimaryText"
+            android:background="@drawable/custominputregistlogin"
+            android:paddingLeft="12dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TEXT LUPA PASSWORD -->
+    <TextView
+        android:id="@+id/tvLupaPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password?"
+        android:textSize="14sp"
+        android:fontFamily="@font/plusjakartasans_medium_500"
+        android:textColor="@color/PrimaryBrand"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginContainer"
+        app:layout_constraintBottom_toTopOf="@+id/btMasuk"
+        android:layout_marginTop="0dp"
+        />
+
+    <!-- BUTTON MASUK -->
+    <Button
+        android:id="@+id/btMasuk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Masuk"
+        android:textSize="14sp"
+        android:fontFamily="@font/plusjakartasans_bold_700"
+        android:textColor="@color/NeutralText"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonloginreg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLupaPassword"
+        app:layout_constraintBottom_toTopOf="@+id/llWadahBelumPunyaAkun"
+        android:layout_marginTop="30dp"
+        />
+
+    <!-- GROUP BELUM PUNYA AKUN DAN DAFTAR DISINI  -->
+    <LinearLayout
+        android:id="@+id/llWadahBelumPunyaAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/btMasuk"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/tvBelumPunyaAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun?"
+            android:textSize="14sp"
+            android:fontFamily="@font/plusjakartasans_bold_700"
+            android:textColor="@color/SecondaryText"
+            android:layout_marginRight="2dp"
+            />
+        <TextView
+            android:id="@+id/tvDaftarDisini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar disini"
+            android:textSize="14sp"
+            android:fontFamily="@font/plusjakartasans_bold_700"
+            android:textColor="@color/SecondaryStatus"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

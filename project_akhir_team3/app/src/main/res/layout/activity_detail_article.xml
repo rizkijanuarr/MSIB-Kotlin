@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.article.DetailArticleActivity"
+    android:background="@color/BackgroundHalaman"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/ivKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_detail_artikel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="24dp"
+        />
+
+    <TextView
+        android:id="@+id/tvArtikel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/plusjakartasans_bold_700"
+        android:text="Artikel"
+        android:textColor="@color/PrimaryText"
+        android:textSize="14sp"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivKembali"
+        app:layout_constraintStart_toEndOf="@+id/ivKembali"
+        app:layout_constraintTop_toTopOf="@+id/ivKembali"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivKembali"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ivKembali"
+                app:layout_constraintTop_toBottomOf="@+id/ivKembali"
+                >
+
+                <ImageView
+                    android:id="@+id/ivArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_article"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/ivArticle"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="16dp"
+                    >
+
+
+
+                    <TextView
+                        android:id="@+id/tv_KeteranganDibaca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30 menit telah dibaca"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/plusjakartasans_reguler_400"
+                        android:textColor="@color/BrandPrimay"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvJudulartikel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mudah Menanam Cabai Agar Cepat Berbuah"
+                        android:textSize="16sp"
+                        android:textColor="@color/PrimaryText"
+                        android:fontFamily="@font/plusjakartasans_bold_700"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_KeteranganDibaca"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:paddingRight="50dp"
+                        android:maxLines="2"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvTab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_article"
+                        android:text="Menanam"
+                        android:paddingVertical="4dp"
+                        android:paddingHorizontal="8dp"
+                        android:textColor="@color/PrimaryBrand"
+                        android:textSize="12sp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/tvJudulartikel"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        />
+
+
+
+                    <WebView
+                        android:id="@+id/tvWebView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTab"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tvWebView"
+                        android:layout_marginTop="16dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tvSumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartasans_reguler_400"
+                            android:textColor="@color/PrimaryText"
+                            android:textSize="16sp"
+                            android:text="Sumber :"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvSumberLink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/plusjakartasans_reguler_400"
+                            android:textColor="@color/SecondaryStatus"
+                            android:text="https://chat.openai.com/c/9f180875-4389-426f-94e8-1328e9b7b4da"
+                            android:textSize="14sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@+id/tvSumber"
+                            android:layout_marginStart="8dp"
+                            android:textAlignment="textStart"
+                            />
+                    </RelativeLayout>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvArtikelLainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artikel Lainya"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/PrimaryText"
+                android:fontFamily="@font/plusjakartasans_bold_700"
+                app:layout_constraintTop_toBottomOf="@+id/CardContent2"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cardArticle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvArtikelLainnya"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

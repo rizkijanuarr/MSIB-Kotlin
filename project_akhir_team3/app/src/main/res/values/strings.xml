@@ -1,0 +1,463 @@
+<resources>
+    <string name="app_name">FinalProject_Chilicare</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //text link
+    <string name="text_linkLayanan">
+
+        Saya setuju dengan <u><a href="https://policies.google.com/terms?hl=id">Ketentuan Layanan</a></u>, <u><a href="https://policies.google.com/terms?hl=id">Kebijakan Privasi</a></u>, dan
+        <u><a href="https://policies.google.com/terms?hl=id">Pengaturan Pemberitahuan default</a></u> dari ChilliCare.
+
+    </string>
+
+
+    <!-- Forum Data -->
+
+    //name
+    <string-array name="data_name">
+        <item>Joko</item>
+        <item>Alam</item>
+        <item>Veilcha</item>
+        <item>Udin</item>
+
+    </string-array>
+
+    //dateteime
+    <string-array name="data_datetime">
+        <item>12 Nov 2023/15:00</item>
+        <item>13 Jan 2023/16:00</item>
+        <item>14 Aug 2023/17:00</item>
+        <item>18 Oct 2023/19:00</item>
+
+
+        //Desc
+    </string-array>
+    <string-array name="data_desc">
+        <item>Pembuatan lahan yang baik merupakan sebuah langkah nyata dalam mencpai keberhasilan</item>
+        <item>Jangan lupa keberhasilan berawal dari sebuah mimpi yang kau bangun</item>
+        <item>Perlu diketahui dalam pengolahan sawah itu perlu kerja keras yang sangat keras</item>
+        <item>Ganteng doang ga cukup kamu harus berusaha keras untuk menyenangkan diri dan pasanganmu</item>
+
+    </string-array>
+
+    <integer-array name="data_avatar">
+        <item>@drawable/avatar</item>
+        <item>@drawable/avatar2</item>
+        <item>@drawable/avatar3</item>
+        <item>@drawable/avatar4</item>
+    </integer-array>
+
+    <integer-array name="data_image">
+        <item>@drawable/img_olahtanah</item>
+        <item>@drawable/img_olahtanah</item>
+        <item>@drawable/img_olahtanah</item>
+        <item>@drawable/img_olahtanah</item>
+
+    </integer-array>
+
+    <!-- Forum Data -->
+
+
+    <!-- untuk keperluan halaman detail artikel biar bisa di scroll -->
+    <string name="appbar_scrolling_view_behavior">androidx.appbar.appbar_scrolling_view_behavior</string>
+
+    <string-array name="tab_titles">
+        <item>Menanam</item>
+        <item>Bibit</item>
+        <item>Hama</item>
+        <item>Tanah</item>
+        <item>Pestisida</item>
+    </string-array>
+
+    <string-array name="card_titles">
+        <item>Menanam</item>
+        <item>Bibit</item>
+        <item>Hama</item>
+        <item>Pestisida</item>
+        <item>Menanam</item>
+        <item>Menanam</item>
+        <item>Petisida</item>
+        <item>Petisida</item>
+        <item>Petisida</item>
+        <item>Petisida</item>
+    </string-array>
+
+    <string-array name="card_subtitles">
+        <item>Mudah Menanam Cabe Agar Cepat Berbuah</item>
+        <item>Tips Memilih Bibit Cabai Yang Berkualitas</item>
+        <item>Cegah Hama Pada Tanaman Cabai Anda!</item>
+        <item>Membuat Pestisida Alami Tanaman Cabai</item>
+        <item>Cara Mudah Menanam Cabai di Pot</item>
+        <item>Teknik Budidaya Cabai Rawit</item>
+        <item>Teknik Budidaya Cabai Rawit</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+    </string-array>
+
+    <string-array name="card_descriptions">
+        <item>Semakin banyak kegiatan seru di tengah kesibukan, salah satunya bertani</item>
+        <item>Bibit yang berkualitas memiliki beberapa ciri-ciri yang bisa chili-cares amati</item>
+        <item>Hama dapat menyebabkan gagal panen pada tanaman cabai Anda.</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Cabai rawit atau cabai kecil (Capsicum frutescens) termasuk dalam famili Solanaceae dan merupakan tanaman berumur panjang (menahun)</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+    </string-array>
+
+    <string-array name="card_durations">
+        <item>3 menit baca</item>
+        <item>5 menit baca</item>
+        <item>4 menit baca</item>
+        <item>5 menit baca</item>
+        <item>5 menit baca</item>
+        <item>10 menit dibaca</item>
+        <item>10 menit dibaca</item>
+        <item>10 menit dibaca</item>
+        <item>10 menit dibaca</item>
+        <item>10 menit dibaca</item>
+    </string-array>
+
+    <integer-array name="card_images">
+        <item>@drawable/gambar_1</item>
+        <item>@drawable/gambar_2</item>
+        <item>@drawable/gambar_3</item>
+        <item>@drawable/gambar_4</item>
+        <item>@drawable/gambar_5</item>
+        <item>@drawable/gambar_6</item>
+        <item>@drawable/gambar_7</item>
+        <item>@drawable/gambar_8</item>
+        <item>@drawable/gambar_9</item>
+        <item>@drawable/gambar_10</item>
+    </integer-array>
+
+    <integer-array name="dataImageDetails">
+        <item>@drawable/gambar_1</item>
+        <item>@drawable/gambar_2</item>
+        <item>@drawable/gambar_3</item>
+        <item>@drawable/gambar_4</item>
+        <item>@drawable/gambar_5</item>
+        <item>@drawable/gambar_6</item>
+        <item>@drawable/gambar_7</item>
+        <item>@drawable/gambar_8</item>
+        <item>@drawable/gambar_9</item>
+        <item>@drawable/gambar_10</item>
+    </integer-array>
+
+    <string-array name="dataTanggalDetails">
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+    </string-array>
+
+    <string-array name="dataWaktuDetails">
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+    </string-array>
+
+    <string-array name="dataTitleDetails">
+        <item>Mudah Menanam Cabe Agar Cepat Berbuah</item>
+        <item>Tips Memilih Bibit Cabai Yang Berkualitas</item>
+        <item>Cegah Hama Pada Tanaman Cabai Anda!</item>
+        <item>Membuat Pestisida Alami Tanaman Cabai</item>
+        <item>Cara Mudah Menanam Cabai di Pot</item>
+        <item>Teknik Budidaya Cabai Rawit</item>
+        <item>Teknik Budidaya Cabai Rawit</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+    </string-array>
+
+    <string-array name="dataSubtitleDetails">
+        <item>Menanam</item>
+        <item>Bibit</item>
+        <item>Hama</item>
+        <item>Pestisida</item>
+        <item>Menanam</item>
+        <item>Menanam</item>
+        <item>Petisida</item>
+        <item>Petisida</item>
+        <item>Petisida</item>
+        <item>Petisida</item>
+    </string-array>
+
+    <string-array name="dataWebViewDetails">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+
+
+    //cardTitleList
+    <string-array name="card_title_list">
+        <item>Menanam</item>
+        <item>Bibit</item>
+        <item>Hama</item>
+        <item>Pestisida</item>
+        <item>Menanam</item>
+        <item>Menanam</item>
+        <item>Petisida</item>
+        <item>Petisida</item>
+        <item>Petisida</item>
+        <item>Petisida</item>
+    </string-array>
+
+    //cardSubtitleList
+    <string-array name="card_subtitle_list">
+        <item>Mudah Menanam Cabe Agar Cepat Berbuah</item>
+        <item>Tips Memilih Bibit Cabai Yang Berkualitas</item>
+        <item>Cegah Hama Pada Tanaman Cabai Anda!</item>
+        <item>Membuat Pestisida Alami Tanaman Cabai</item>
+        <item>Cara Mudah Menanam Cabai di Pot</item>
+        <item>Teknik Budidaya Cabai Rawit</item>
+        <item>Teknik Budidaya Cabai Rawit</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+    </string-array>
+
+    //cardDescriptionList
+    <string-array name="card_description_list">
+        <item>Semakin banyak kegiatan seru di tengah kesibukan, salah satunya bertani</item>
+        <item>Bibit yang berkualitas memiliki beberapa ciri-ciri yang bisa chili-cares amati</item>
+        <item>Hama dapat menyebabkan gagal panen pada tanaman cabai Anda.</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Cabai rawit atau cabai kecil (Capsicum frutescens) termasuk dalam famili Solanaceae dan merupakan tanaman berumur panjang (menahun)</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+        <item>Meningkatnya kesadaran masyarakat akan efek samping menggunakan pestisida kimiawi</item>
+    </string-array>
+
+    //cardDurasibacaList
+    <string-array name="card_durasibaca_list">
+        <item>3 menit baca</item>
+        <item>5 menit baca</item>
+        <item>4 menit baca</item>
+        <item>5 menit baca</item>
+        <item>5 menit baca</item>
+        <item>10 menit dibaca</item>
+        <item>10 menit dibaca</item>
+        <item>10 menit dibaca</item>
+        <item>10 menit dibaca</item>
+        <item>10 menit dibaca</item>
+    </string-array>
+
+    //cardImageList
+    <string-array name="card_image_list">
+        <item>@drawable/gambar_1</item>
+        <item>@drawable/gambar_2</item>
+        <item>@drawable/gambar_3</item>
+        <item>@drawable/gambar_4</item>
+        <item>@drawable/gambar_5</item>
+        <item>@drawable/gambar_6</item>
+        <item>@drawable/gambar_7</item>
+        <item>@drawable/gambar_8</item>
+        <item>@drawable/gambar_9</item>
+        <item>@drawable/gambar_10</item>
+    </string-array>
+
+    //dataImageDetails
+    <string-array name="data_image_details">
+        <item>@drawable/gambar_1</item>
+        <item>@drawable/gambar_2</item>
+        <item>@drawable/gambar_3</item>
+        <item>@drawable/gambar_4</item>
+        <item>@drawable/gambar_5</item>
+        <item>@drawable/gambar_6</item>
+        <item>@drawable/gambar_7</item>
+        <item>@drawable/gambar_8</item>
+        <item>@drawable/gambar_9</item>
+        <item>@drawable/gambar_10</item>
+    </string-array>
+
+    //dataTanggalDetails
+    <string-array name="data_tanggal_details">
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+        <item>19 Januari 2021</item>
+    </string-array>
+
+    //dataWaktuDetails
+    <string-array name="data_waktu_details">
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+        <item>19:00 WIB</item>
+    </string-array>
+
+    <string-array name="data_title_details">
+        <item>Mudah Menanam Cabe Agar Cepat Berbuah</item>
+        <item>Tips Memilih Bibit Cabai Yang Berkualitas</item>
+        <item>Cegah Hama Pada Tanaman Cabai</item>
+        <item>Membuat Pestisida Alami Tanaman Cabai</item>
+        <item>Cara Mudah Menanam Cabai di Pot</item>
+        <item>Teknik Budidaya Cabai Rawit</item>
+        <item>Teknik Budidaya Cabai Rawit</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+        <item>Membuat pestisida alami tanaman cabai</item>
+    </string-array>
+
+    <string-array name="waktuCuaca">
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+    </string-array>
+
+    <string-array name="iconCuaca">
+        <item>@drawable/sun</item>
+        <item>@drawable/sun</item>
+        <item>@drawable/sun</item>
+        <item>@drawable/sun</item>
+        <item>@drawable/sun</item>
+        <item>@drawable/sun</item>
+        <item>@drawable/sun</item>
+    </string-array>
+
+    <string-array name="suhuPerJam">
+        <item>30</item>
+        <item>30</item>
+        <item>30</item>
+        <item>30</item>
+        <item>30</item>
+        <item>30</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>menanam</item>
+        <item>bibit</item>
+    </string-array>
+
+    <string-array name="title">
+        <item>Tips Memilih Bibit Cabai\nYang Berkualitas</item>
+        <item>Tips Memilih Bibit Cabai\nYang Berkualitas</item>
+    </string-array>
+
+    <string-array name="descartikel">
+        <item>Semakin banyak kegiatan seru\ndi tengah kesibukan, salah satunya bertani</item>
+        <item>Semakin banyak kegiatan seru\ndi tengah kesibukan, salah satunya bertani</item>
+    </string-array>
+
+    <!--  <integer-array name="clock">-->
+    <!--      <item>@drawable/clock</item>-->
+    <!--      <item>@drawable/clock</item>-->
+    <!--  </integer-array>-->
+
+    <string-array name="lastsen">
+        <item> 3 menit baca</item>
+        <item> 3 menit baca</item>
+    </string-array>
+
+    <string-array name="cover">
+        <item>@drawable/cabai</item>
+        <item>@drawable/cabai</item>
+    </string-array>
+
+    <string-array name="datelms">
+        <item> 3 november 2023</item>
+        <item> 3 november 2023</item>
+        <item> 3 november 2023</item>
+    </string-array>
+
+    <string-array name="titlelms">
+        <item>Merawat Benih Agar Tetap Sehat </item>
+        <item>Merawat Benih Agar Tetap Sehat </item>
+        <item>Merawat Benih Agar Tetap Sehat </item>
+    </string-array>
+
+
+    <string-array name="desclms">
+        <item> apakah anda mengetahui jika benih membutuhkan perawatan yang extra</item>
+        <item> apakah anda mengetahui jika benih membutuhkan perawatan yang extra</item>
+        <item> apakah anda mengetahui jika benih membutuhkan perawatan yang extra</item>
+    </string-array>
+
+    <integer name="progress">10</integer>
+
+    <integer-array name="coverlms">
+        <item>@drawable/lmsartikel1</item>
+        <item>@drawable/lmsartikel1</item>
+        <item>@drawable/lmsartikel1</item>
+    </integer-array>
+
+    <integer-array name="datacovermodul">
+        <item>@drawable/materilms</item>
+    </integer-array>
+
+    <string-array name="data_longdesc">
+        <item>apakah anda mengetahui jika benih membutuhkan perawatan yang extraawdawawkdlakwdawd\nwjdajwjdawawdakwkdlawd</item>
+        <item>apakah anda mengetahui jika benih membutuhkan perawatan yang extraawdawawkdlakwdawd\nwjdajwjdawawdakwkdlawd</item>
+        <item>apakah anda mengetahui jika benih membutuhkan perawatan yang extraawdawawkdlakwdawd\nwjdajwjdawawdakwkdlawd</item>
+        <item>apakah anda mengetahui jika benih membutuhkan perawatan yang extraawdawawkdlakwdawd\nwjdajwjdawawdakwkdlawd</item>
+        <item>apakah anda mengetahui jika benih membutuhkan perawatan yang extraawdawawkdlakwdawd\nwjdajwjdawawdakwkdlawd</item>
+    </string-array>
+
+    <string-array name="data_shortdesc">
+        <item>Merawat Benih Agar Tetap Sehatawdawdawd awdawda wdasdewad</item>
+        <item>Merawat Benih Agar Tetap Sehatawdawdawd awdawda wdasdewad</item>
+        <item>Merawat Benih Agar Tetap Sehatawdawdawd awdawda wdasdewad</item>
+        <item>Merawat Benih Agar Tetap Sehatawdawdawd awdawda wdasdewad</item>
+        <item>Merawat Benih Agar Tetap Sehatawdawdawd awdawda wdasdewad</item>
+        <item>Merawat Benih Agar Tetap Sehatawdawdawd awdawda wdasdewad</item>
+    </string-array>
+
+    <string-array name="data_titlemodul">
+        <item>Merawat Benih Agar Tetap Sehat </item>
+        <item>Merawat Benih Agar Tetap Sehat </item>
+        <item>Merawat Benih Agar Tetap Sehat </item>
+        <item>Merawat Benih Agar Tetap Sehat </item>
+        <item>Merawat Benih Agar Tetap Sehat </item>
+    </string-array>
+
+
+</resources>
+
+
+
